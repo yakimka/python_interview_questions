@@ -1,0 +1,14 @@
+---
+title:
+- type: main
+  text: Вопросы для подготовки к Python Developer интервью
+- type: edition
+  text: build 1
+creator:
+- role: author
+  text: yakimka
+toc-title: Содержание
+language: ru-RU
+stylesheet: book_res/style.css
+cover-image: book_res/cover.png
+...
