@@ -3,7 +3,7 @@ title:
 - type: main
   text: Вопросы для подготовки к Python Developer интервью
 - type: edition
-  text: build 1
+  text: dev-build
 author:
 - yakimka <https://github.com/yakimka>
 - pavlenk0 <https://github.com/pavlenk0>
