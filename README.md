@@ -32,7 +32,7 @@
 
 ### Не хочу читать в Markdown, хочу читать в электронной книге
 
-Пожалуйста [questions.epub](questions.epub)
+Пожалуйста [releases](https://github.com/yakimka/python_interview_questions/releases)
 
 ## Список вопросов
 
