@@ -1,0 +1,36 @@
+name: Checks workflow
+
+on: ['push', 'pull_request']
+
+jobs:
+  check-toc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run
+        run: make toc-check
+
+  release:
+    needs: check-toc
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Create epub
+        uses: docker://pandoc/core:2.14
+        with:
+          args: --toc --toc-depth=6 -o questions.epub metadata.txt questions.md
+
+      - name: Get TAG
+        if: startsWith(github.ref, 'refs/tags/')
+        run: echo "TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
+      - name: Write build number
+        if: startsWith(github.ref, 'refs/tags/')
+        run: sed -i "s/build 1/$TAG/g" metadata.txt
+      - name: Test
+        run: cat metadata.txt
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: questions.epub

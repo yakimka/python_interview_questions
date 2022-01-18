@@ -4,9 +4,9 @@ title:
   text: Вопросы для подготовки к Python Developer интервью
 - type: edition
   text: build 1
-creator:
-- role: author
-  text: yakimka
+author:
+- yakimka <https://github.com/yakimka>
+- pavlenk0 <https://github.com/pavlenk0>
 toc-title: Содержание
 language: ru-RU
 stylesheet: book_res/style.css
