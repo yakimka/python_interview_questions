@@ -2199,6 +2199,8 @@ HTTPS — расширение протокола HTTP, поддерживающ
 - [GitHub - pkolt/design_patterns: Паттерны проектирования](https://github.com/pkolt/design_patterns)
 - [GitHub - faif/python-patterns: A collection of design patterns/idioms in Python](https://github.com/faif/python-patterns)
 - [Python Design Patterns](https://python-patterns.guide/)
+- [Design Patterns in Python: A Series](https://medium.com/@amirm.lavasani/design-patterns-in-python-a-series-f502b7804ae5)
+- [A Catalog For Design Patterns in Python](https://towardsdev.com/a-catalog-for-design-patterns-in-python-a1b69493c677)
 
 ### Порождающие (Creational)
 
