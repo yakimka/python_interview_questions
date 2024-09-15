@@ -1642,6 +1642,7 @@ class MyClass(BaseClass, metaclass=Singleton):
 ## Что такое garbage collector. В чём его плюсы и минусы
 
 - [Всё, что нужно знать о сборщике мусора в Python](https://habr.com/ru/post/417215/)
+- [CPython Garbage Collection: The Internal Mechanics and Algorithms](https://blog.codingconfessions.com/p/cpython-garbage-collection-internals)
 
 GC (generational garbage collector) - это сборщик мусора, создавался он в первую очередь для обнаружения и удаления циклических ссылок.
 `gc` является встроенным в python модулем и при необходимости его можно выключить и запускать вручную (или не запускать). Чтобы понимать для чего был создан GC нужно понимать как в Python работает менеджер памяти и как эта память высвобождается.
