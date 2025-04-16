@@ -23,7 +23,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         run: sed -i "s/dev-build/$TAG/g" metadata.txt
       - name: Create epub
-        uses: docker://pandoc/core:2.14
+        uses: docker://pandoc/core:3.6
         with:
           args: --toc --toc-depth=6 -o questions_${{ env.TAG }}.epub metadata.txt questions.md
 
