@@ -4950,7 +4950,7 @@ print(quicksort([10, 5, 2, 3]))
 
 ## Очередь и стек
 
-Очередь FIFO (first in first out), стрек LIFO (last in first out)
+Очередь FIFO (first in first out), стек LIFO (last in first out)
 
 ## Дерево
 
